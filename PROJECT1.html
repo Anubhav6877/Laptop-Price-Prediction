@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Prediction</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Laptop Price Prediction</h1>
+        <form id="laptopForm">
+            <label for="brand">Choose a brand:</label>
+            <select id="brand" required>
+                <option value="dell">Dell</option>
+                <option value="hp">HP</option>
+                <option value="apple">Apple</option>
+                <option value="lenovo">Lenovo</option>
+            </select>
+
+            <label for="processor">Choose a processor:</label>
+            <select id="processor" required>
+                <option value="i5">Intel i5</option>
+                <option value="i7">Intel i7</option>
+                <option value="m1">Apple M1</option>
+            </select>
+
+            <label for="ram">Select RAM size (GB):</label>
+            <select id="ram" required>
+                <option value="8">8 GB</option>
+                <option value="16">16 GB</option>
+                <option value="32">32 GB</option>
+            </select>
+
+            <label for="storage">Select Storage (GB):</label>
+            <select id="storage" required>
+                <option value="256">256 GB SSD</option>
+                <option value="512">512 GB SSD</option>
+                <option value="1024">1 TB SSD</option>
+            </select>
+
+            <button type="submit">Predict Price</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Predicted Laptop Price: <span id="predictedPrice"></span></h2>
+        </div>
+    </div>
+
+    <script src="dynamic.js"></script>
+</body>
+</html>
